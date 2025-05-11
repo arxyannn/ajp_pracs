@@ -1,0 +1,56 @@
+✅ Problem Summary
+The IBaseUser interface contains methods required by multiple user types (Admin, Writer, Reader).
+
+However, not all user types need all methods:
+
+Readers only read posts.
+
+Writers can write and edit.
+
+Admins can edit and block.
+
+Result: Classes are forced to implement methods they don’t need, leading to bloated and error-prone code.
+
+
+
+❌ Violated SOLID Principle
+Interface Segregation Principle (ISP) is violated.
+
+ISP Definition: "Clients should not be forced to depend on methods they do not use."
+
+In the current design, classes like Reader are forced to implement edit and block methods even though they don't use them.
+
+
+
+✅ How to Solve This Problem
+To fix this design issue:
+
+Split the IBaseUser interface into multiple smaller interfaces based on role-specific behavior.
+
+Create interfaces such as:
+
+IReader – for reading posts.
+
+IWriter – for writing and editing posts.
+
+IAdmin – for blocking and editing posts.
+
+Let each class (Reader, Writer, Admin) implement only the interfaces it needs.
+
+
+
+✅ Advantages of the New Design
+Cleaner separation of responsibilities.
+
+Improved flexibility — adding new user roles or behaviors won't affect existing code.
+
+Easier maintenance — classes are only as complex as their roles require.
+
+Better code readability and testability.
+
+
+
+✅ Conclusion
+The original system violates the Interface Segregation Principle.
+
+By refactoring into smaller role-specific interfaces, we achieve a more maintainable, extensible, and clean design — which is in line with the SOLID principles.

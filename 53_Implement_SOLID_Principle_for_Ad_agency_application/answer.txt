@@ -1,0 +1,34 @@
+❌ Problem: Violation of SOLID (Tightly Coupled Code)
+🔴 Violation:
+The Analytics logic and Marketing logic are mixed in the same class. Any change by Marketing (e.g., tracking campaigns) affects Analytics.
+🔴 Violated Principle:
+Single Responsibility Principle (SRP) – one class is doing too many things.
+Open/Closed Principle (OCP) – the class must be modified for new marketing requirements.
+
+
+
+✅ Solution: Apply SOLID Principles
+✅ Fix: Use SRP and OCP
+Separate Analytics, Marketing, and Ad Serving logic.
+Use interfaces or composition to extend behavior.
+
+
+bad code example:
+class AdManager {
+
+    public void serveAd(String adType) {
+        System.out.println("Serving Ad: " + adType);
+
+        // Analytics logic
+        trackImpression(adType);
+
+        // Marketing logic (bad: mixed here)
+        if (adType.equals("Video")) {
+            System.out.println("Start campaign tracking for Video Ad");
+        }
+    }
+
+    private void trackImpression(String adType) {
+        System.out.println("Logging analytics for: " + adType);
+    }
+}

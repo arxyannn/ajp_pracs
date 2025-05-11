@@ -1,0 +1,88 @@
+Design a food delivery application as a mobile app where users can create and view orders. 
+After designing basic application later on stakeholders asked 
+1. To implement sending orders via email.
+2. To display the order total price in the email.
+3. To update our order view.
+
+How to address new requirements? 
+Which SOLID principle can be used to provide the solution? 
+Design application with new requirements and show working of both the systems individually.
+
+
+
+ANSWER:
+✅ Problem Statement
+You are designing a food delivery mobile application where users can:
+
+Create orders
+
+View orders
+
+🆕 New stakeholder requirements:
+Send orders via email
+
+Display total order price in the email
+
+Update order view without affecting current system
+
+✅ How to Address New Requirements
+1. Avoid changing the existing working code
+This reduces risk of introducing bugs in existing functionality.
+
+2. Use interfaces and abstract the functionality
+Use interface-based design to allow multiple implementations.
+
+3. Apply SOLID principles to guide your changes.
+✅ SOLID Principles Used
+1. Single Responsibility Principle (SRP)
+Each class has one reason to change.
+
+Order only handles order data.
+
+OrderViewer handles how orders are displayed.
+
+EmailService (if added later) handles email delivery.
+
+2. Open/Closed Principle (OCP)
+The system is open for extension (e.g., email viewer, total display).
+
+But closed for modification — you don’t change existing classes.
+
+3. Dependency Inversion Principle (DIP)
+High-level classes (like OrderService) depend on interfaces, not concrete implementations.
+
+This allows easy switching between ConsoleOrderViewer and EmailOrderViewer.
+
+✅ Application Design Strategy
+🔷 Interfaces
+OrderViewer: Defines how an order is displayed (console, email, etc.)
+
+🔷 Classes
+Order: Holds order details (items, prices).
+
+ConsoleOrderViewer: Displays basic order view.
+
+EmailOrderViewer: Sends order via email and includes total price.
+
+OrderService: Uses OrderViewer (via interface) to process orders.
+
+✅ Demonstrating Both Systems Individually
+1. Initial System
+Uses ConsoleOrderViewer
+
+Displays items in terminal
+
+2. Extended System
+Uses EmailOrderViewer
+
+Displays items + total price in simulated email format
+
+Both systems work independently without affecting each other because they implement the same interface.
+
+✅ Benefits of This Approach
+Easier to test each component in isolation
+
+Future features (like SMS or in-app notification) can be added without rewriting core logic
+
+Adheres to clean coding principles
+
