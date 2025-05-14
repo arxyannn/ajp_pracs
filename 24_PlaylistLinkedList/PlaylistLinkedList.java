@@ -1,3 +1,7 @@
+// LinkedList Example for Playlist
+// Manage songs in a playlist using LinkedList and show add/remove operations.
+
+
 import java.util.LinkedList;
 
 public class PlaylistLinkedList {

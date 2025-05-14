@@ -1,3 +1,6 @@
+// Create a Generic Box Class
+// Create a class that stores objects of any type and prints the content.
+
 public class GenericBox<T> {
     private T content;
 

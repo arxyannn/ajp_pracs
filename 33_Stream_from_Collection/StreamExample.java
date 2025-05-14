@@ -1,3 +1,5 @@
+// Stream from Collection
+// Convert a list of integers to a stream and print all elements.
 import java.util.Arrays;
 import java.util.List;
 

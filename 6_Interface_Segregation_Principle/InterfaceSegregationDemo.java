@@ -1,4 +1,6 @@
 // File: InterfaceSegregationDemo.java
+// Apply Interface Segregation Principle
+// Create separate interfaces for print, scan, and fax operations and implement only required ones.
 
 // Separate interfaces
 interface Printer {

@@ -1,3 +1,6 @@
+// Sort Data using TreeSet
+// Insert names in TreeSet and show sorted order output.
+
 import java.util.*;
 
 public class SortDataTreeSet {

@@ -1,5 +1,6 @@
 // File: LiskovSubstitutionDemo.java
-
+// Apply Liskov Substitution Principle
+// Show how a subclass (e.g., Square) can be substituted for a superclass (e.g., Rectangle) without altering behavior.
 // Shape interface defining behavior
 interface Shape {
     int getArea();

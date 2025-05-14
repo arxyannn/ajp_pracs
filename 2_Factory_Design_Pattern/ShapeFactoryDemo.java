@@ -1,4 +1,6 @@
 // File: ShapeFactoryDemo.java
+// Implement Factory Design Pattern
+// Create a factory method that returns different types of shapes (e.g., Circle, Square) based on input.
 
 interface Shape {
     void draw();

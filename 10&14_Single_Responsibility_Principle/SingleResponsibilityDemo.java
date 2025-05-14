@@ -1,4 +1,6 @@
 // File: SingleResponsibilityDemo.java
+// Apply the Single Responsibility Principle
+// Design a class that performs one specific task like handling user input or processing data.
 
 // Class responsible for handling user input
 class UserInputHandler {

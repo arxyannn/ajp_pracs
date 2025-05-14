@@ -1,3 +1,5 @@
+// Use Interface with Default Method
+// Create an interface with a default greeting method and override it in the implementing class.
 
 interface Greeting {
     default void sayHello() {
@@ -11,6 +13,7 @@ class EnglishGreeting implements Greeting {
         System.out.println("Hello from EnglishGreeting!");
     }
 }
+
 
 public class DefaultGreeting {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+// Apply SOLID Principles (S and D)
+// Design a simple library system following all SOLID principles with at least 2-3 classes/interfaces.
 // S: Handles only book data
 class Book {
     private String title;

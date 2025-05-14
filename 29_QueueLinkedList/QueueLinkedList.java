@@ -1,3 +1,6 @@
+// Implement a Queue with LinkedList
+// Simulate a task queue with enqueue, dequeue operations using LinkedList.
+
 import java.util.*;
 
 public class QueueLinkedList {

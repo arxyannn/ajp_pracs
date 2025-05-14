@@ -1,4 +1,5 @@
-
+// Multiple Interfaces in One Class
+// Implement two interfaces in a single class and invoke their methods.
 interface Flyable {
     void fly();
 }

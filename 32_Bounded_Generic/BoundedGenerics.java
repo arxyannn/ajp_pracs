@@ -1,3 +1,5 @@
+// Bounded Generics Example
+// Create a generic method to print numeric values only using bounded type parameters.
 
 public  class BoundedGenerics {
     public static <T extends Number> void printDoubleValue(T number) {

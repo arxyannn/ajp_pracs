@@ -1,4 +1,6 @@
 // File: StrategyPatternDemo.java
+// Implement Strategy Design Pattern
+// Create a context class that uses different sorting strategies (bubble sort, quick sort) at runtime.
 
 interface SortStrategy {
     void sort(int[] arr);

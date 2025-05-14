@@ -1,3 +1,6 @@
+// Use Interface for Polymorphism
+// Demonstrate how different implementations of an interface can be used interchangeably.
+
 interface Drawable {
     void draw();
 }
