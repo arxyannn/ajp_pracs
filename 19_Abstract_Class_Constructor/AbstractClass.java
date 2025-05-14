@@ -1,3 +1,5 @@
+// Abstract Class with Constructor
+// Create an abstract class with a constructor and extend it in a subclass with additional logic.
 
 abstract class Animal {
     Animal() {

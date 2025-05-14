@@ -1,3 +1,6 @@
+// Remove Duplicates using HashSet
+// Input a list of names and store unique ones using HashSet.
+
 import java.util.*;
 
 public class RemoveDuplicatesHashSet {

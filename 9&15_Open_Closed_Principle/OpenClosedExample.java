@@ -1,4 +1,7 @@
 // Interface (abstraction)
+// Apply Open/Closed Principle
+// Create a class that can be extended for new functionality without modifying the existing code.
+
 interface PaymentMethod {
     void pay(double amount);
 }

@@ -1,3 +1,6 @@
+// Map and Filter Stream Operations
+// Given a list of names, filter names starting with 'A' and convert them to uppercase.
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

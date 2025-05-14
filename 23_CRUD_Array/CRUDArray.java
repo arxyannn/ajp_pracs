@@ -1,3 +1,5 @@
+// Perform CRUD using ArrayList
+// Add, retrieve, update, and remove student records using ArrayList.
 import java.util.*;
 
 class Student {

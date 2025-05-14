@@ -1,3 +1,6 @@
+// HashMap Example - Student Grades
+// Store and retrieve students' grades using roll numbers as keys.
+
 import java.util.*;
 
 public class StudentGradesHashMap {

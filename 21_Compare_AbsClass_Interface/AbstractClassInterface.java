@@ -1,3 +1,6 @@
+// Compare Abstract Class and Interface
+// Create a program showing key differences in features and usage of both.
+
 interface Walkable {
     void walk();
 }

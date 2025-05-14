@@ -1,3 +1,6 @@
+// Parallel Stream Usage
+// Use parallelStream() to process a large dataset and compare time taken with normal stream.
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

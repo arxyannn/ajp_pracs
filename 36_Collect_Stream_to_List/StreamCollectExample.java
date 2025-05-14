@@ -1,3 +1,6 @@
+// Collect Stream to List
+// Convert a list of strings into a stream, modify, and collect it back to list.
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

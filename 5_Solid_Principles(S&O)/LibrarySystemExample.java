@@ -1,3 +1,6 @@
+// Apply SOLID Principles (S and O)
+// Design a simple library system following all SOLID principles with at least 2-3 classes/interfaces.
+
 import java.util.*;
 
 // Book class (only stores book info - SRP)

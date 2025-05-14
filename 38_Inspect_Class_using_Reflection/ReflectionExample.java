@@ -1,3 +1,6 @@
+// Inspect Class using Reflection
+// Write a program to get class name, fields, and method names using reflection.
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 

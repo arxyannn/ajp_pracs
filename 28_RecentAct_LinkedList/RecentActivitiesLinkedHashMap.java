@@ -1,3 +1,6 @@
+// LinkedHashMap for Recent Activities
+// Record user activity timestamps while maintaining insertion order.
+
 import java.util.*;
 
 public class RecentActivitiesLinkedHashMap {

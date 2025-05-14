@@ -1,3 +1,5 @@
+// Apply SOLID Principles (L and I)
+// Design a simple library system following all SOLID principles with at least 2-3 classes/interfaces.
 public class LibrarySystem {
     // Book class (SRP)
     static class Book {

@@ -1,3 +1,6 @@
+// Use Reduce for Sum
+// Use reduce() to calculate the sum of a list of integers.
+
 import java.util.Arrays;
 import java.util.List;
 

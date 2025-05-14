@@ -1,3 +1,6 @@
+//Apply Dependency Inversion Principle
+//Demonstrate loose coupling by injecting service objects through constructors or interfaces.
+
 // Abstraction
 interface NotificationService {
     void sendNotification(String message);
