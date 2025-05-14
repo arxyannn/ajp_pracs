@@ -1,0 +1,11 @@
+| Feature                  | **Abstract Class**                                                              | **Interface**                                                                 |
+| ------------------------ | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Purpose**              | To define a **partial blueprint** for subclasses with optional default behavior | To define a **contract** that classes must fully implement                    |
+| **Methods**              | Can have both **abstract (no body)** and **concrete (with body)** methods       | Before Java 8: **only abstract methods**<br>After Java 8: also default/static |
+| **Fields/State**         | Can have **instance variables**, constructors, and state                        | Cannot have instance fields (except constants `public static final`)          |
+| **Multiple Inheritance** | Java doesn’t support multiple inheritance of classes                            | A class can implement **multiple interfaces**                                 |
+| **Access Modifiers**     | Can use **private, protected, public** methods                                  | All methods are implicitly **public abstract** (unless static/default)        |
+| **Inheritance Usage**    | Subclasses extend an abstract class and may inherit code                        | Classes implement an interface and provide full implementation                |
+| **Constructor**          | Can have constructors                                                           | Interfaces **cannot** have constructors                                       |
+| **When to Use**          | Use when subclasses share **common behavior/state**                             | Use when unrelated classes must follow the **same contract**                  |
+| **Polymorphism**         | Supports strong "is-a" relationship (e.g., `Human is-a Mammal`)                 | Interfaces focus on **capabilities** (e.g., `Walkable` means "can walk")      |

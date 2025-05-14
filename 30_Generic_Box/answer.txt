@@ -1,0 +1,28 @@
+📘 THEORY: What Are Generics in Java?
+🔷 1. Definition
+Generics in Java are a feature that allows you to define classes, interfaces, and methods with type parameters, so they can operate on different types while maintaining type safety.
+
+Without generics, you’d often use Object, which requires typecasting and can lead to runtime errors. Generics move type checks to compile-time and eliminate unsafe casting.
+
+🔷 2. Why Use Generics?
+| Benefit                  | Explanation                                                             |
+| ------------------------ | ----------------------------------------------------------------------- |
+| **Type Safety**          | You can catch type errors at compile time rather than at runtime.       |
+| **Code Reusability**     | You can write a single class/method to handle different data types.     |
+| **Eliminates Casting**   | No need to cast objects when retrieving from collections or containers. |
+| **Improved Readability** | Clarifies what type of object is expected, reducing bugs.               |
+
+🔷 3. Generic Syntax Basics
+public class Box<T> {
+    T content;
+}
+T is a type parameter — like a placeholder.
+
+When you create an instance, you specify the actual type, e.g., Box<String>.
+
+Common type parameters:
+
+Symbol	Typical Use
+T	Type
+E	Element (e.g., in collections)
+K, V	Key, Value (e.g., in maps)

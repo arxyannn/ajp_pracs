@@ -1,0 +1,61 @@
+🔍 Official Definition (from Barbara Liskov)
+“If S is a subtype of T, then objects of type T may be replaced with objects of type S without altering the correctness of the program.”
+
+💡 In Simple Words:
+A subclass should behave like its parent class without changing the expected behavior.
+
+You should be able to use a subclass anywhere the parent class is expected — without surprises.
+
+The child class should respect the contract of the parent class (interface or superclass).
+
+If the parent class says “I have method getArea() that behaves in a certain way,” then the subclass should honor that behavior.
+
+✅ What LSP Is About:
+Concept	Explanation
+✔️ Replaceability	Subclasses can stand in for their superclass.
+✔️ Behavioral Compatibility	Subclasses don’t break expected behavior.
+✔️ No Violations	No runtime errors, no logic contradictions.
+
+🚫 Violating LSP (A Classic Mistake)
+Let’s say Square extends Rectangle, and inherits both setWidth() and setHeight().
+
+But in a square, setting one side should affect both width and height. That violates LSP, because:
+Rectangle r = new Square();
+r.setWidth(5);
+r.setHeight(10);
+System.out.println(r.getArea()); // Is it 50 or 100? Confusing!
+The behavior becomes unpredictable, which breaks LSP.
+
+So, don’t inherit if the behavior of the child class has to change or override key expectations.🔍 Official Definition (from Barbara Liskov)
+“If S is a subtype of T, then objects of type T may be replaced with objects of type S without altering the correctness of the program.”
+
+💡 In Simple Words:
+A subclass should behave like its parent class without changing the expected behavior.
+
+You should be able to use a subclass anywhere the parent class is expected — without surprises.
+
+The child class should respect the contract of the parent class (interface or superclass).
+
+If the parent class says “I have method getArea() that behaves in a certain way,” then the subclass should honor that behavior.
+
+✅ What LSP Is About:
+Concept	Explanation
+✔️ Replaceability	Subclasses can stand in for their superclass.
+✔️ Behavioral Compatibility	Subclasses don’t break expected behavior.
+✔️ No Violations	No runtime errors, no logic contradictions.
+
+🚫 Violating LSP (A Classic Mistake)
+Let’s say Square extends Rectangle, and inherits both setWidth() and setHeight().
+
+But in a square, setting one side should affect both width and height. That violates LSP, because:
+
+java
+Copy
+Edit
+Rectangle r = new Square();
+r.setWidth(5);
+r.setHeight(10);
+System.out.println(r.getArea()); // Is it 50 or 100? Confusing!
+The behavior becomes unpredictable, which breaks LSP.
+
+So, don’t inherit if the behavior of the child class has to change or override key expectations.

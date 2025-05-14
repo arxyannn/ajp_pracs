@@ -1,6 +1,7 @@
 ❌ Problem: Violation of SOLID (Tightly Coupled Code)
 🔴 Violation:
-The Analytics logic and Marketing logic are mixed in the same class. Any change by Marketing (e.g., tracking campaigns) affects Analytics.
+The Analytics logic and Marketing logic are mixed in the same class. 
+Any change by Marketing (e.g., tracking campaigns) affects Analytics.
 🔴 Violated Principle:
 Single Responsibility Principle (SRP) – one class is doing too many things.
 Open/Closed Principle (OCP) – the class must be modified for new marketing requirements.

@@ -1,0 +1,22 @@
+🔍 Official Definition (from SOLID)
+“High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.”
+
+💬 Simple Explanation:
+Don’t make core logic (high-level modules) depend directly on specific implementations (low-level modules).
+
+Instead, both the high-level and low-level components should depend on interfaces (abstractions).
+
+🎯 Why?
+Without DIP:
+
+High-level code (like LibraryManager) creates objects like EmailService or SMSService itself.
+
+This means the high-level code is tightly coupled to the specific notification types.
+
+If you need to change how notification works (e.g., add push notification), you must modify the high-level logic — which breaks the Open/Closed Principle.
+
+With DIP:
+
+The high-level module only knows the interface (NotificationService), not the actual implementation.
+
+You can swap, replace, or mock EmailService, SMSService, or even WhatsAppService without touching LibraryManager.
